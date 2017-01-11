@@ -10,6 +10,11 @@
       display: block;
       height: 30px;
     }
+
+    .aligned-login-container & {
+      position: absolute;
+      height: 100%;
+    }
   }
 
   .footer {
@@ -45,6 +50,23 @@
 
     .privacy-policy {
       float: right;
+    }
+  }
+
+  &.aligned-login-container{
+    .footer{
+      width: 400px;
+    }
+
+    .footer-container {
+      padding: 9px 42px;
+    }
+
+    &.right-aligned {
+      .footer {
+        right: 0;
+        left: auto;
+      }
     }
   }
 }

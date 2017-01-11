@@ -24,6 +24,10 @@
   min-width: $container-min-width;
   @include box-sizing(border-box);
 
+  .aligned-login-container &{
+    border-radius: 0px;
+  }
+
   @include device-mq(x-small) {
     margin-top: 0;
     width: 100%;
@@ -144,4 +148,17 @@
   top: 0;
   left: -200px;
   opacity: 0;
+}
+
+.aligned-login-container {
+  #signin-container {
+    position: absolute;
+    height: 100%;
+    background: #fff;
+  }
+  &.right-aligned {
+    #signin-container {
+      right: 0;
+    }
+  }
 }

@@ -128,6 +128,11 @@
       @include box-shadow(none);
     }
 
+    .aligned-login-container &{
+      border: none;
+      @include box-shadow(none);
+    }
+
     .bg-helper {
     /* -- Main Background and Border Colors -- */
     /* set the helper's color value to the same color as the main-container's background */
